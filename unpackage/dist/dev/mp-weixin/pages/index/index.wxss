@@ -1,0 +1,17 @@
+
+.home.data-v-57280228{
+	color: #232e3d;
+}
+.content.data-v-57280228{
+	padding: 0 20rpx;
+}
+.box.data-v-57280228{
+	width: 100%;
+	height: 10rpx;
+	background: #f2f3f7;
+	-webkit-border-radius: 4rpx;
+	        border-radius: 4rpx;
+	margin-top: 15rpx;
+	margin-bottom: 15rpx;
+}
+

@@ -1,0 +1,30 @@
+
+.sofa.data-v-fd8c40f4{
+	color: #232E3D;
+}
+.titles.data-v-fd8c40f4, .taps.data-v-fd8c40f4{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	line-height: 100rpx;
+	text-align: center;
+	border-bottom: 1px solid #f2f3f7;
+}
+.titles-item.data-v-fd8c40f4, .taps-item.data-v-fd8c40f4{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+}
+.titles-item.data-v-fd8c40f4{
+	font-size: 18px;
+}
+.taps-item text.data-v-fd8c40f4{
+	color: #8A94A1;
+	background-color: #f2f3f7;
+	padding: 4px;
+	-webkit-border-radius: 15px;
+	        border-radius: 15px;
+	
+	font-size: 14px;
+}
+

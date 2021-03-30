@@ -1,0 +1,18 @@
+
+.content.data-v-0c57b8d7{
+	height: 80rpx;
+	line-height: 80rpx;
+	/* background-color: #007AFF; */
+	
+	padding: 0 10px;
+}
+.city-icon.data-v-0c57b8d7{
+	width: 30rpx;
+	height: 30rpx;
+}
+.city-text.data-v-0c57b8d7{
+	margin-left: 4px;
+	font-size: 18px;
+}
+
+

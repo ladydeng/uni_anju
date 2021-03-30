@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "首页",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "index-nav-bar": "/pages/index/childComps/IndexNavBar",
+    "banner": "/pages/index/childComps/Banner",
+    "new-product": "/pages/index/childComps/NewProduct",
+    "collocation": "/pages/index/childComps/Collocation",
+    "recomend": "/pages/index/childComps/Recomend"
+  }
+}

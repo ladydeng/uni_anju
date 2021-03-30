@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "所有风格",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "s-nav-bar": "/pages/style/childComps/SNavBar",
+    "northern-europe": "/pages/style/childComps/NorthernEurope",
+    "modern": "/pages/style/childComps/Modern",
+    "europe-america": "/pages/style/childComps/EuropeAmerica",
+    "new-chinese-style": "/pages/style/childComps/NewChineseStyle"
+  }
+}

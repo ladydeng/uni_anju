@@ -1,0 +1,39 @@
+
+.content.data-v-0ae6c67d{
+	height: 60rpx;
+	padding: 0 15px;
+	margin-top: 10rpx;
+    margin-bottom: 10rpx;
+}
+.search-input.data-v-0ae6c67d{
+	display: block;
+	height: 60rpx;
+	-webkit-border-radius: 20rpx;
+	        border-radius: 20rpx;
+	
+	-webkit-box-sizing: border-box;
+	
+	        box-sizing: border-box;
+	padding-left: 100rpx;
+	
+	background-color: #f2f3f7;
+}
+.search-img.data-v-0ae6c67d{
+	width: 40rpx;
+	height: 40rpx;
+	
+	position: absolute;
+	top: 20rpx;
+	left: 70rpx;
+	z-index: 100;
+}
+.camera-img.data-v-0ae6c67d{
+	width: 40rpx;
+	height: 40rpx;
+	
+	position: absolute;
+	top: 20rpx;
+	right: 70rpx;
+	z-index: 100;
+}
+

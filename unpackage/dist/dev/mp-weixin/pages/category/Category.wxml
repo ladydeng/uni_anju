@@ -1,0 +1,1 @@
+<view class="category"><category-nav-bar vue-id="3de8f540-1" bind:__l="__l"></category-nav-bar><category-tab-control vue-id="3de8f540-2" bind:__l="__l"></category-tab-control></view>

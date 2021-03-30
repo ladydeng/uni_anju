@@ -1,0 +1,10 @@
+
+.banner-img.data-v-a44a042c{
+	width: 100%;
+	height: 200rpx;
+	
+	-webkit-border-radius: 10px;
+	
+	        border-radius: 10px;
+}
+

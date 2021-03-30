@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "选择城市",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "city-nav-bar": "/pages/city/childComps/CityNavBar",
+    "city-list": "/pages/city/childComps/CityList"
+  }
+}

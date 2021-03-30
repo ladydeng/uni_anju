@@ -1,0 +1,127 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/category/Category",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/liveHome/LiveHome",
+			"style": {
+				"navigationBarTitleText": "生活家"
+			}
+		},
+		{
+			"path": "pages/cart/Cart",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		},
+		{
+			"path": "pages/profile/Profile",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/city/City",
+			"style": {
+				"navigationBarTitleText": "选择城市",
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/login/Login",
+			"style": {
+				"navigationBarTitleText": "用户登录",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		{
+			"path": "pages/register/Register",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		{
+			"path": "pages/newProduct/NewProduct",
+			"style": {
+				"navigationBarTitleText": "本期新品",
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/style/Style",
+			"style": {
+				"navigationBarTitleText": "所有风格",
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/sofa/Sofa",
+			"style": {
+				"navigationBarTitleText": "沙发"
+			}
+		},
+		{
+			"path": "pages/productDetail/ProductDetail",
+			"style": {
+				"navigationBarTitleText": "商品详情页",
+				 "navigationBarBackgroundColor":"#000000",
+				 "navigationBarTextStyle":"white"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	
+	"tabBar":{
+		"color":"#8a94a1",
+		"selectedColor":"#232e3d",
+		"list":[
+			{
+				"text":"首页",
+				"pagePath":"pages/index/index",
+				"iconPath":"static/img/tabbar/home.png",
+				"selectedIconPath":"static/img/tabbar/home_active.png"
+			},
+			{
+				"text":"分类",
+				"pagePath":"pages/category/Category",
+				"iconPath":"static/img/tabbar/category.png",
+				"selectedIconPath":"static/img/tabbar/category_active.png"
+			},{
+				"text":"生活家",
+				"pagePath":"pages/liveHome/LiveHome",
+				"iconPath":"static/img/tabbar/live_home.png",
+				"selectedIconPath":"static/img/tabbar/live_home_active.png"
+			},{
+				"text":"购物车",
+				"pagePath":"pages/cart/Cart",
+				"iconPath":"static/img/tabbar/cart.png",
+				"selectedIconPath":"static/img/tabbar/cart_active.png"
+			},{
+				"text":"我的",
+				"pagePath":"pages/profile/Profile",
+				"iconPath":"static/img/tabbar/profile.png",
+				"selectedIconPath":"static/img/tabbar/profile_active.png"
+			}
+		]
+	}
+}

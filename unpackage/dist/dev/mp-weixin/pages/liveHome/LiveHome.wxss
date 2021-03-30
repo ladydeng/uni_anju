@@ -1,0 +1,17 @@
+
+.live-home.data-v-2b5c3306{
+	padding: 0 15rpx;
+	color: #232E3D;
+}
+.title.data-v-2b5c3306{
+	line-height: 80rpx;
+}
+.box.data-v-2b5c3306{
+	display: inline-block;
+	width: 20rpx;
+	height: 10rpx;
+	background-color: black;
+	
+	margin-right: 10rpx;
+}
+

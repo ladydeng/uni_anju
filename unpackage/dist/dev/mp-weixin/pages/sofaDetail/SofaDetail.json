@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "沙发详情页",
+  "navigationBarBackgroundColor": "#000000",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "bottom-bar": "/components/content/bottomBar/BottomBar"
+  }
+}

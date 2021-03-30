@@ -1,0 +1,42 @@
+
+.content.data-v-5a592633 {
+	padding: 0 15px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	color: #232e3d;
+}
+.back.data-v-5a592633 {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+}
+.tab-control.data-v-5a592633 {
+	-webkit-box-flex: 9;
+	-webkit-flex: 9;
+	        flex: 9;
+	line-height: 80rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.navbar-item.data-v-5a592633 {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	/* text-align: center; */
+}
+.back-img.data-v-5a592633 {
+	width: 20rpx;
+	height: 40rpx;
+	line-height: 80rpx;
+	
+	margin-top: 22rpx;
+}
+
+/* 导航动态样式 */
+.active.data-v-5a592633 {
+	padding-bottom: 6rpx;
+	border-bottom: 2px solid #232e3d;
+}
+

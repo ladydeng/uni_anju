@@ -1,0 +1,27 @@
+
+.content {
+	padding: 0 15px;
+	/* background-color: red; */
+}
+.content{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	line-height: 80rpx;
+}
+.left, .right{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+}
+.right{
+	text-align: right;
+}
+.back{
+	width: 20rpx;
+	height: 40rpx;
+	vertical-align: middle;
+	
+	margin-right: 20rpx;
+}
+

@@ -1,0 +1,1 @@
+<view class="select-city"><city-nav-bar vue-id="a78da480-1" bind:__l="__l"></city-nav-bar><city-list vue-id="a78da480-2" bind:__l="__l"></city-list></view>

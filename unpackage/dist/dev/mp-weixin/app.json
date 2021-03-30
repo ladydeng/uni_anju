@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/Category",
+    "pages/liveHome/LiveHome",
+    "pages/cart/Cart",
+    "pages/profile/Profile",
+    "pages/city/City",
+    "pages/login/Login",
+    "pages/register/Register",
+    "pages/newProduct/NewProduct",
+    "pages/style/Style",
+    "pages/sofa/Sofa",
+    "pages/sofaDetail/SofaDetail"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#8a94a1",
+    "selectedColor": "#232e3d",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/img/tabbar/home.png",
+        "selectedIconPath": "static/img/tabbar/home_active.png"
+      },
+      {
+        "text": "分类",
+        "pagePath": "pages/category/Category",
+        "iconPath": "static/img/tabbar/category.png",
+        "selectedIconPath": "static/img/tabbar/category_active.png"
+      },
+      {
+        "text": "生活家",
+        "pagePath": "pages/liveHome/LiveHome",
+        "iconPath": "static/img/tabbar/live_home.png",
+        "selectedIconPath": "static/img/tabbar/live_home_active.png"
+      },
+      {
+        "text": "购物车",
+        "pagePath": "pages/cart/Cart",
+        "iconPath": "static/img/tabbar/cart.png",
+        "selectedIconPath": "static/img/tabbar/cart_active.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/profile/Profile",
+        "iconPath": "static/img/tabbar/profile.png",
+        "selectedIconPath": "static/img/tabbar/profile_active.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示",
+      "geocode": true
+    }
+  },
+  "usingComponents": {}
+}

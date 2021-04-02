@@ -10,15 +10,14 @@
 	export default {
 		data() {
 			return {
-
+				
 			}
 		},
 		components: {
 			ProfileUserInfo
 		},
-		onLoad() {
-
-
+		onShow() {
+			
 		},
 		methods: {
 

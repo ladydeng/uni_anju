@@ -15,12 +15,16 @@
 		<!-- #ifdef H5 -->
 		<view class="user-info">
 			<!-- H5 -->
-			<!-- <image src="http://localhost:3000/img/profile/user.png" class="avatar-url"></image>
-			<text class="nick-name">182****6145</text> -->
-			<text class="title" @click="toLogin">登录/注册</text>
+			<view v-if="getUserAccount">
+				<image src="http://localhost:3000/img/profile/user.png" class="avatar-url"></image>
+				<text class="nick-name">{{ $store.state.userAccount }}</text>
+			</view>
+			<view v-else>
+				<text class="title" @click="toLogin">登录/注册</text>
+			</view>
 		</view>
 		<!-- #endif -->
-		
+
 		<view class="tab-control">
 			<view class="tab-control-item border-right">
 				<image src="http://localhost:3000/img/profile/no_pay.png" class="tab-item-img"></image>
@@ -35,7 +39,7 @@
 				<text>已完成</text>
 			</view>
 		</view>
-		
+
 		<view class="func">
 			<view class="func-item">
 				<image src="http://localhost:3000/img/profile/coupon.png" class="func-item-badge"></image>
@@ -83,7 +87,8 @@
 				<image src="http://localhost:3000/img/profile/enter.png" class="enter-img"></image>
 			</view>
 		</view>
-
+        
+		<button type="default" @click="loginOut">退出登录</button>
 	</view>
 </template>
 
@@ -95,11 +100,17 @@
 				isShow: true,
 
 				// 本地存储的用户信息
-				userInfo: []
+				userInfo: [],
+				
 			}
 		},
 		components: {},
 		created() {
+			const account = uni.getStorageSync("userAccount")
+			if(account){
+				this.$store.commit("saveUserAccount",account)
+			}
+			
 			// 1.获取token
 			const token = uni.getStorageSync("token")
 
@@ -147,8 +158,6 @@
 					}
 				})
 			},
-
-
 
 			// 登录
 			Login() {
@@ -225,28 +234,51 @@
 					}
 				})
 			},
-		
-		    //跳转到登录页面
-			toLogin(){
+
+			//跳转到登录页面
+			toLogin() {
 				uni.navigateTo({
-					url:"/pages/login/Login"
+					url: "/pages/login/Login"
 				})
+			},
+			
+			// 退出登录
+			loginOut(){
+				uni.showModal({
+					title:"提示框",
+					content:"请确认是否要退出登录！",
+					success: res => {
+						if(res.confirm == true){
+							// 删除本地存储的用户账户
+							uni.removeStorageSync("userAccount")
+							
+							// 删除vuex的用户账户
+							this.$store.commit("deleteUserAccount")
+						}
+					}
+				})
+			}
+		},
+		computed:{
+			// 从vuex获取用户账号
+			getUserAccount(){
+				return this.$store.state.userAccount
 			}
 		}
 	}
 </script>
 
 <style scoped>
-	.title{
+	.title {
 		display: block;
 		text-align: center;
 		font-size: 20px;
 	}
-	
-	.user{
+
+	.user {
 		color: #232E3D;
 	}
-	
+
 	.user-info {
 		width: 100%;
 		height: 200rpx;
@@ -270,71 +302,71 @@
 		display: inline-block;
 		margin-left: 30rpx;
 	}
-	
-	.tab-control{
+
+	.tab-control {
 		display: flex;
-		
+
 		box-sizing: border-box;
 		padding-top: 30rpx;
 		padding-bottom: 30rpx;
 		/* background-color: #007AFF; */
 	}
-	
-	.tab-control-item{
+
+	.tab-control-item {
 		flex: 1;
 		text-align: center;
 	}
-	
-	.border-right{
+
+	.border-right {
 		border-right: 1px solid #232E3D;
 	}
-	
-	.tab-item-img{
+
+	.tab-item-img {
 		width: 60rpx;
 		height: 60rpx;
 		vertical-align: middle;
 	}
-	
-	.tab-control-item text{
+
+	.tab-control-item text {
 		display: block;
 		margin-top: 20rpx;
 	}
-	
-	.func{
+
+	.func {
 		width: 100%;
 		height: auto;
-		
+
 		/* background-color: red; */
 	}
-	
-	.func-item{
+
+	.func-item {
 		border-bottom: 1rpx solid #F2F3F7;
 		line-height: 80rpx;
-		
+
 		box-sizing: border-box;
 		padding: 0 15px;
 	}
-	
-	.double-border{
+
+	.double-border {
 		border-bottom: 30rpx solid #F2F3F7;
 	}
-	
-	
-	.func-item-badge{
+
+
+	.func-item-badge {
 		display: inline-block;
 		width: 40rpx;
 		height: 40rpx;
 		vertical-align: middle;
-		
+
 		margin-right: 20rpx;
 	}
-	
-	.enter-img{
+
+	.enter-img {
 		display: inline-block;
 		width: 20rpx;
 		height: 30rpx;
 		vertical-align: middle;
-		
+
 		/* margin-left: 300rpx; */
 		float: right;
 		margin-top: 30rpx;

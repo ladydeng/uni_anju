@@ -70,22 +70,41 @@
 					uni.request({
 						url: " http://localhost:4000/login",
 						method: "GET",
-						data:{
+						// method: "POST",
+						// // post请求必须设置，否则后端获取的req.method为options
+						// header: {
+						// 	"content-type": "application/x-www-form-urlencoded"
+						// },
+						data: {
 							userAccount: this.userAccount,
 							userPassword: this.userPassword
 						},
 						// 收到开发者服务器成功返回
-						success(res) {
+						success: res => {
 							console.log("请求成功")
-							if(res.data == 200){
-								console.log("登录成功 ！")
-							}else if(res.data == 400){
-								console.log("账号或密码错误 ！")
+							if (res.data == 200) {
+								uni.showToast({
+									title: '登录成功',
+									duration: 2000,
+								});
+
+								// 两秒后页面跳转
+								setTimeout(this.toProfile, 2000)
+
+								// 账号密码进行本地存储
+								uni.setStorageSync("userAccount", this.userAccount)
+								uni.setStorageSync("userPassword", this.userPassword)
+
+								// 把账号保存到vuex
+								this.$store.commit("saveUserAccount", this.userAccount)
+
+							} else if (res.data == 400) {
+								alert("账号或密码错误 ！")
 							}
 						},
 						// 接口调用失败
 						fail(err) {
-							console.log("请求失败，未接收到服务器返回数据")
+							alert("请求失败，未接收到服务器返回数据")
 						}
 					})
 				}
@@ -107,6 +126,13 @@
 				} else {
 					this.showPasswordErr = false
 				}
+			},
+
+			toProfile() {
+				// 页面跳转
+				uni.switchTab({
+					url: "/pages/profile/Profile",
+				})
 			}
 		}
 	}

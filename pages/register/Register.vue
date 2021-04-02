@@ -2,12 +2,14 @@
 	<view class="register">
 		<view class="input">
 			<view class="input-item">
-				<input type="text" v-model="userAccount" @blur="checkUserAccount" placeholder="请输入用户名" class="input-content" />
+				<input type="text" v-model="userAccount" @blur="checkUserAccount" placeholder="请输入用户名"
+					class="input-content" />
 				<text class="input-title">账号</text>
 				<text v-show="showAccontErr" class="err-text">{{ accountErrText }}</text>
 			</view>
 			<view class="input-item">
-				<input type="text" password="true" v-model="userPassword" @blur="checkUserPassword" placeholder="请输入密码" class="input-content" />
+				<input type="text" password="true" v-model="userPassword" @blur="checkUserPassword" placeholder="请输入密码"
+					class="input-content" />
 				<text class="input-title">密码</text>
 				<text v-show="showPasswordErr" class="err-text">{{ passwordErrText }}</text>
 			</view>
@@ -23,16 +25,16 @@
 	export default {
 		data() {
 			return {
-				userAccount:"",
-				userPassword:"",
-				
+				userAccount: "",
+				userPassword: "",
+
 				// 是否显示账户密码
-				showAccontErr:false,
-				showPasswordErr:false,
-				
+				showAccontErr: false,
+				showPasswordErr: false,
+
 				// 错误提示文本
-				accountErrText:"账户不能为空",
-				passwordErrText:"密码不能为空"
+				accountErrText: "账户不能为空",
+				passwordErrText: "密码不能为空"
 			}
 		},
 		components: {
@@ -43,53 +45,86 @@
 		},
 		methods: {
 			// 用户点击登录
-			Register(){
-			   // 账号密码不为空
-			   if(this.userAccount !== "" && this.userPassword !== ""){
-				  // 1.向我们的服务器发送请求（检验该账号是否存在，若存在，则显示该用户已存在）
-				  
-				  // 2.若账户不存在则进行数据库存储，注册成功
-				  console.log("注册")
-				  
-				  // 发送请求
-				  uni.request({
-				  	url: " http://localhost:4000/register",
-				  	method: "GET",
-				  	data:{
-				  		userAccount: this.userAccount,
-				  		userPassword: this.userPassword
-				  	},
-				  	// 收到开发者服务器成功返回
-				  	success(res) {
-				  		console.log("请求成功")
-						cosnole.log(res)
-				  		
-				  	},
-				  	// 接口调用失败
-				  	fail(err) {
-				  		console.log("请求失败，未接收到服务器返回数据")
-				  	    console.log(err)
-					}
-				  })
-			   }
+			Register() {
+				// 账号密码不为空
+				if (this.userAccount !== "" && this.userPassword !== "") {
+					// 1.向我们的服务器发送请求（检验该账号是否存在，若存在，则显示该用户已存在）
+
+					// 2.若账户不存在则进行数据库存储，注册成功
+					console.log("注册")
+
+					// 发送请求
+					uni.request({
+						url: " http://localhost:4000/register",
+						// method: "GET",
+						method: "POST",
+						// post请求必须设置，否则后端获取的req.method为options
+						header: {
+							"content-type": "application/x-www-form-urlencoded"
+						},
+						data: {
+							userAccount: this.userAccount,
+							userPassword: this.userPassword
+						},
+						// 收到开发者服务器成功返回
+						success: res => {
+							console.log("请求成功")
+							if (res.data == 200) {
+								// 注册成功
+								uni.showToast({
+									title: '注册成功',
+									duration: 2000,
+								});
+
+								// 两秒后页面跳转
+								setTimeout(this.toBack, 2000)
+								
+							} else if (res.data == 400) {
+								// 已存在该用户
+								alert("该账号已注册，请登录")
+								uni.navigateBack({
+									delta: 1
+								})
+							} else if (res.data == 500) {
+								// 内部服务器错误
+								alert("注册失败，服务器错误")
+							}
+
+						},
+						// 接口调用失败
+						fail(err) {
+							alert("请求失败，未接收到服务器返回数据")
+							console.log(err)
+						}
+					})
+				}
 			},
-			
+
 			// 判断账户是否为空
-			checkUserAccount(){
-				if(this.userAccount == ""){
+			checkUserAccount() {
+				if (this.userAccount == "") {
 					this.showAccontErr = true
-				}else{
+				} else {
 					this.showAccontErr = false
 				}
 			},
-			
+
 			// 判断密码是否为空
-			checkUserPassword(){
-				if(this.userPassword == ""){
+			checkUserPassword() {
+				if (this.userPassword == "") {
 					this.showPasswordErr = true
-				}else{
+				} else {
 					this.showPasswordErr = false
 				}
+			},
+
+			// 返回
+			toBack() {
+				console.log("register back")
+				// 页面跳转
+				uni.navigateBack({
+					delta: 1
+				})
 			}
 		}
 	}
@@ -148,8 +183,8 @@
 	.forget-pwd {
 		text-align: right;
 	}
-	
-	.err-text{
+
+	.err-text {
 		color: red;
 	}
 </style>

@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "商品详情页",
+  "navigationBarBackgroundColor": "#000000",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "bottom-bar": "/components/content/bottomBar/BottomBar",
+    "product-detail-info": "/pages/productDetail/childComps/ProductDetailInfo",
+    "product-detail-comment": "/pages/productDetail/childComps/ProductDetailComment",
+    "product-detail-collection": "/pages/productDetail/childComps/ProductDetailCollection",
+    "product-detail-recomend": "/pages/productDetail/childComps/ProductDetailRecomend",
+    "product-detail-base-info": "/pages/productDetail/childComps/ProductDetailBaseInfo"
+  }
+}

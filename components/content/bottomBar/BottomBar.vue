@@ -1,20 +1,22 @@
 <template>
-	<view class="bottom-bar">
-		<view class="bar-list">
-			<view class="bar-item" @click="adviserClick">
-				<image src="http://localhost:3000/img/bottomBar/adviser.png" class="bar-img"></image>
-				<text class="bar-text">家居顾问</text>
-			</view>
-			<view class="bar-item" @click="collectionClick">
-				<image src="http://localhost:3000/img/bottomBar/collection.png" class="bar-img"></image>
-				<text class="bar-text">收藏</text>
-			</view>
-			<view class="bar-item" @click="cartClick">
-				<image src="http://localhost:3000/img/bottomBar/cart.png" class="bar-img"></image>
-				<text class="bar-text">购物车</text>
-			</view>
-			<view class="bar-item" @click="addToCart">
-				<text class="bar-text add-to-cart">加入购物车</text>
+	<view class="box">
+		<view class="bottom-bar">
+			<view class="bar-list">
+				<view class="bar-item" @click="adviserClick">
+					<image src="http://localhost:3000/img/bottomBar/adviser.png" class="bar-img"></image>
+					<text class="bar-text">家居顾问</text>
+				</view>
+				<view class="bar-item" @click="collectionClick">
+					<image src="http://localhost:3000/img/bottomBar/collection.png" class="bar-img"></image>
+					<text class="bar-text">收藏</text>
+				</view>
+				<view class="bar-item" @click="cartClick">
+					<image src="http://localhost:3000/img/bottomBar/cart.png" class="bar-img"></image>
+					<text class="bar-text">购物车</text>
+				</view>
+				<view class="bar-item" @click="addToCart">
+					<text class="bar-text add-to-cart">加入购物车</text>
+				</view>
 			</view>
 		</view>
 	</view>
@@ -52,6 +54,12 @@
 </script>
 
 <style scoped>
+	/* 占位 */
+	.box{
+		width: 100%;
+		height: 88rpx;
+	}
+	
 	.bottom-bar{
 		width: 100%;
 		height: 88rpx;

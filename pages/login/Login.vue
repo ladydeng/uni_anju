@@ -2,19 +2,23 @@
 	<view class="login">
 		<view class="input">
 			<view class="input-item">
-				<input type="text" placeholder="请输入用户名" class="input-content" />
+				<input type="text" v-model="userAccount" @blur="checkUserAccount" placeholder="请输入用户名"
+					class="input-content" />
 				<text class="input-title">账号</text>
+				<text v-show="showAccontErr" class="err-text">{{ accountErrText }}</text>
 			</view>
 			<view class="input-item">
-				<input type="text" placeholder="请输入密码" class="input-content" />
+				<input type="text" password="true" v-model="userPassword" @blur="checkUserPassword" placeholder="请输入密码"
+					class="input-content" />
 				<text class="input-title">密码</text>
+				<text v-show="showPasswordErr" class="err-text">{{ passwordErrText }}</text>
 			</view>
 		</view>
 
 		<view class="btn">
-			<button type="default" class="login-btn">登录</button>
+			<button type="default" class="login-btn" @click="Login">登录</button>
 			<view class="taps">
-				<text class="new-user">新用户注册</text>
+				<text class="new-user" @click="toRegister">新用户注册</text>
 				<text class="forget-pwd">忘记密码</text>
 			</view>
 		</view>
@@ -25,6 +29,16 @@
 	export default {
 		data() {
 			return {
+				userAccount: "",
+				userPassword: "",
+
+				// 是否显示账户密码
+				showAccontErr: false,
+				showPasswordErr: false,
+
+				// 错误提示文本
+				accountErrText: "账户不能为空",
+				passwordErrText: "密码不能为空"
 			}
 		},
 		components: {
@@ -34,7 +48,66 @@
 
 		},
 		methods: {
-			
+			// 跳转到用户注册页面
+			toRegister() {
+				uni.navigateTo({
+					url: "/pages/register/Register"
+				})
+			},
+
+			// 用户点击登录
+			Login() {
+				// 账号密码不为空
+				if (this.userAccount !== "" && this.userPassword !== "") {
+					// 1.向我们的服务器发送请求（检验该账号是否存在，若存在，密码是否正确）
+
+					// 2.若账户密码都正确，登录成功  
+
+					// 3.只要用户不点击退出，该账户密码一直不过期
+					console.log("进行账号密码验证")
+
+					// 发送请求
+					uni.request({
+						url: " http://localhost:4000/login",
+						method: "GET",
+						data:{
+							userAccount: this.userAccount,
+							userPassword: this.userPassword
+						},
+						// 收到开发者服务器成功返回
+						success(res) {
+							console.log("请求成功")
+							if(res.data == 200){
+								console.log("登录成功 ！")
+							}else if(res.data == 400){
+								console.log("账号或密码错误 ！")
+							}
+						},
+						// 接口调用失败
+						fail(err) {
+							console.log("请求失败，未接收到服务器返回数据")
+						}
+					})
+				}
+			},
+
+			// 判断账户是否为空
+			checkUserAccount() {
+				if (this.userAccount == "") {
+					this.showAccontErr = true
+				} else {
+					this.showAccontErr = false
+				}
+			},
+
+			// 判断密码是否为空
+			checkUserPassword() {
+				if (this.userPassword == "") {
+					this.showPasswordErr = true
+				} else {
+					this.showPasswordErr = false
+				}
+			}
 		}
 	}
 </script>
@@ -56,7 +129,7 @@
 	.input-item {
 		width: 100%;
 		height: 80rpx;
-		margin-bottom: 30rpx;
+		margin-bottom: 50rpx;
 	}
 
 	.input-content {
@@ -104,5 +177,9 @@
 
 	.forget-pwd {
 		text-align: right;
+	}
+
+	.err-text {
+		color: red;
 	}
 </style>

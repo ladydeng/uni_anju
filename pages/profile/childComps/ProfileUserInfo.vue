@@ -15,8 +15,9 @@
 		<!-- #ifdef H5 -->
 		<view class="user-info">
 			<!-- H5 -->
-			<image src="http://localhost:3000/img/profile/user.png" class="avatar-url"></image>
-			<text class="nick-name">182****6145</text>
+			<!-- <image src="http://localhost:3000/img/profile/user.png" class="avatar-url"></image>
+			<text class="nick-name">182****6145</text> -->
+			<text class="title" @click="toLogin">登录/注册</text>
 		</view>
 		<!-- #endif -->
 		
@@ -109,6 +110,7 @@
 			}
 		},
 		methods: {
+			// 用户点击授权
 			getUserInfo() {
 				console.log(111)
 				uni.getSetting({
@@ -222,12 +224,25 @@
 						console.log(err)
 					}
 				})
+			},
+		
+		    //跳转到登录页面
+			toLogin(){
+				uni.navigateTo({
+					url:"/pages/login/Login"
+				})
 			}
 		}
 	}
 </script>
 
 <style scoped>
+	.title{
+		display: block;
+		text-align: center;
+		font-size: 20px;
+	}
+	
 	.user{
 		color: #232E3D;
 	}

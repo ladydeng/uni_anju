@@ -56,6 +56,7 @@
 <style scoped>
 	.product-detail-info {
 		color: #232E3D;
+		border-bottom: 30rpx solid #F2F3F7;
 	}
 
 	.img-box {

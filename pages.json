@@ -82,6 +82,20 @@
 				 "navigationBarBackgroundColor":"#000000",
 				 "navigationBarTextStyle":"white"
 			}
+		},
+		{
+			"path": "pages/safeGuard/SafeGuard",
+			"style": {
+				"navigationBarTitleText": "购物保障",
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/swiper/Swiper",
+			"style": {
+				"navigationBarTitleText": "轮播图",
+				"navigationStyle":"custom"
+			}
 		}
 	],
 	"globalStyle": {

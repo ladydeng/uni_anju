@@ -1,4 +1,9 @@
 
+.title.data-v-532f751a{
+	display: block;
+	text-align: center;
+	font-size: 20px;
+}
 .user.data-v-532f751a{
 	color: #232E3D;
 }

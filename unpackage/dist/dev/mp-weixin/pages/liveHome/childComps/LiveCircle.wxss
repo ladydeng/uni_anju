@@ -1,4 +1,7 @@
 
+.active.data-v-c8cac410{
+	color: red;
+}
 .title.data-v-c8cac410{
 	line-height: 120rpx;
 	/* background-color: red; */
@@ -74,8 +77,8 @@
 }
 .news.data-v-c8cac410, .collection.data-v-c8cac410, .good.data-v-c8cac410{
 	position: relative;
-	right: -65rpx;
-	top: -15rpx;
+	right: -70rpx;
+	top: -30rpx;
 	
 	font-size: 12px;
 	color: #8A94A1;

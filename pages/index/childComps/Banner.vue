@@ -1,6 +1,6 @@
 <template>
 	<view class="banner">
-		<image src="http://localhost:3000/img/index/banner/banner.png" class="banner-img"></image>
+		<image src="http://localhost:3000/img/index/banner/banner.png" class="banner-img" @click="toSafeGuard"></image>
 		<view class="banner-describe">
 			<block v-for="(item,index) in describe" :key="index">
 				<view class="describe-item">
@@ -23,7 +23,11 @@
 
 		},
 		methods: {
-
+			toSafeGuard(){
+				uni.navigateTo({
+					url:"/pages/safeGuard/SafeGuard"
+				})
+			}
 		},
 		computed: {
 

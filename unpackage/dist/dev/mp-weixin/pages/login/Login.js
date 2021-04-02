@@ -130,7 +130,11 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
 //
 //
 //
@@ -156,7 +160,17 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 var _default =
 {
   data: function data() {
-    return {};
+    return {
+      userAccount: "",
+      userPassword: "",
+
+      // 是否显示账户密码
+      showAccontErr: false,
+      showPasswordErr: false,
+
+      // 错误提示文本
+      accountErrText: "账户不能为空",
+      passwordErrText: "密码不能为空" };
 
   },
   components: {},
@@ -165,7 +179,61 @@ var _default =
   onLoad: function onLoad() {
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    // 跳转到用户注册页面
+    toRegister: function toRegister() {
+      uni.navigateTo({
+        url: "/pages/register/Register" });
+
+    },
+
+    // 用户点击登录
+    Register: function Register() {
+      // 账号密码不为空
+      if (this.userAccount !== "" && this.userPassword !== "") {
+        // 1.向我们的服务器发送请求（检验该账号是否存在，若存在，密码是否正确）
+
+        // 2.若账户密码都正确，登录成功  
+
+        // 3.只要用户不点击退出，该账户密码一直不过期
+        console.log("进行账号密码验证");
+
+        // 发送请求
+        uni.request({
+          url: "http://localhost:4000/login",
+          method: "GET",
+          data: {
+            userAccount: this.userAccount,
+            userPassword: this.userPassword },
+
+          success: function success(res) {
+            console.log("请求成功");
+          },
+          fail: function fail(err) {
+            console.log("请求失败");
+          } });
+
+      }
+    },
+
+    // 判断账户是否为空
+    checkUserAccount: function checkUserAccount() {
+      if (this.userAccount == "") {
+        this.showAccontErr = true;
+      } else {
+        this.showAccontErr = false;
+      }
+    },
+
+    // 判断密码是否为空
+    checkUserPassword: function checkUserPassword() {
+      if (this.userPassword == "") {
+        this.showPasswordErr = true;
+      } else {
+        this.showPasswordErr = false;
+      }
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

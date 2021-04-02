@@ -8033,9 +8033,14 @@ _vue.default.use(_vuex.default);
 // 创建store对象
 var store = new _vuex.default.Store({
   state: {
+    // 验证账户过期
     token: "",
+    // 当前城市
     currentCity: "",
-    userInfo: [] },
+    // 用户信息
+    userInfo: [],
+    // 购物车数据
+    shoppingCart: [] },
 
   mutations: {
     // 设置currentCity
@@ -8045,6 +8050,10 @@ var store = new _vuex.default.Store({
     // 保存用户信息
     saveUser: function saveUser(state, user) {
       state.userInfo = user;
+    },
+    // 加入购物车
+    addToCart: function addToCart(state, product) {
+      state.shoppingCart.push(product);
     } } });var _default =
 
 

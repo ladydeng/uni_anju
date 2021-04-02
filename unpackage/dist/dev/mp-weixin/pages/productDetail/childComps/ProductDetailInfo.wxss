@@ -1,0 +1,127 @@
+
+.product-detail-info.data-v-39a73bcf {
+	color: #232E3D;
+	border-bottom: 30rpx solid #F2F3F7;
+}
+.img-box.data-v-39a73bcf {
+	border-top: 20rpx solid black;
+	border-bottom: 100rpx solid black;
+	margin: 0;
+}
+.sofa-img.data-v-39a73bcf {
+	width: 100%;
+	height: 400rpx;
+}
+.banner-badge.data-v-39a73bcf {
+	width: 100%;
+	height: 80rpx;
+	line-height: 80rpx;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding-left: 20rpx;
+
+	background-color: #F2F3F7;
+}
+.banner-badge text.data-v-39a73bcf {
+	font-size: 14px;
+	display: inline-block;
+	margin-right: 30rpx;
+}
+.title-badge.data-v-39a73bcf {
+	display: inline-block;
+	width: 80rpx;
+	height: 40rpx;
+	text-align: center;
+	line-height: 40rpx;
+
+	-webkit-border-radius: 20rpx;
+
+	        border-radius: 20rpx;
+	padding: 6rpx;
+	font-size: 12px;
+
+	background-color: #F2F3F7;
+	/* background-color: red; */
+}
+.product-info.data-v-39a73bcf {
+	padding: 0 15px;
+	border-bottom: 1px solid #F2F3F7;
+}
+.product-name.data-v-39a73bcf {
+	font-size: 20px;
+	line-height: 80rpx;
+}
+.product-decribe.data-v-39a73bcf {
+	display: block;
+	color: #8A94A1;
+}
+.product-price.data-v-39a73bcf {
+	display: block;
+	font-size: 20px;
+	line-height: 60rpx;
+}
+.price-describe.data-v-39a73bcf {
+	display: block;
+	color: #8A94A1;
+}
+.live-house.data-v-39a73bcf {
+	display: block;
+	width: 200rpx;
+	height: 40rpx;
+	line-height: 40rpx;
+	text-align: center;
+	margin-top: 10rpx;
+	margin-bottom: 20rpx;
+
+	background-color: #F2F3F7;
+}
+.active.data-v-39a73bcf{
+	padding: 0 15px;
+}
+.active-item.data-v-39a73bcf{
+	width: 90%;
+	height: 50rpx;
+	/* background-color: red; */
+	
+	/* 超出部分文本以...显示 */
+	/* text-overflow: ellipsis; */
+	overflow: hidden;
+	
+	margin-bottom: 10rpx;
+}
+.active-first.data-v-39a73bcf, .active-second.data-v-39a73bcf{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	border-bottom: 1px solid #F2F3F7;
+	padding: 10px 0;
+}
+.active-title.data-v-39a73bcf{
+	-webkit-box-flex: 2;
+	-webkit-flex: 2;
+	        flex: 2;
+	color: #8A94A1;
+}
+.active-list.data-v-39a73bcf{
+	-webkit-box-flex: 8;
+	-webkit-flex: 8;
+	        flex: 8;
+	font-size: 14px;
+}
+.active-select-size.data-v-39a73bcf{
+	-webkit-box-flex: 8;
+	-webkit-flex: 8;
+	        flex: 8;
+	font-size: 18px;
+}
+.reduce.data-v-39a73bcf{
+	display: inline-block;
+	border: 1rpx solid #232E3D;
+	-webkit-border-radius: 10rpx;
+	        border-radius: 10rpx;
+	padding-left: 4rpx;
+	padding-right: 6rpx;
+	
+	margin-right: 6rpx;
+}
+

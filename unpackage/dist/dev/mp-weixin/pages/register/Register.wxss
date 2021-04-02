@@ -1,0 +1,54 @@
+
+.register.data-v-75857bf4 {
+	padding: 0 15px;
+	color: #232e3d;
+	border-top: 1rpx solid #8A94A1;
+}
+.input.data-v-75857bf4 {
+	width: 100%;
+	height: 100%;
+	margin-top: 80rpx;
+	margin-bottom: 80rpx;
+}
+.input-item.data-v-75857bf4 {
+	width: 100%;
+	height: 80rpx;
+	margin-bottom: 50rpx;
+}
+.input-content.data-v-75857bf4 {
+	display: block;
+	width: 90%;
+	height: 80rpx;
+	background-color: #f2f3f7;
+
+	margin: 0 auto;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding-left: 100rpx;
+	-webkit-border-radius: 15px;
+	        border-radius: 15px;
+}
+.register-btn.data-v-75857bf4 {
+	width: 90%;
+	height: 80rpx;
+	line-height: 80rpx;
+	background-color: #232e3d;
+
+	margin: 0 auto;
+	-webkit-border-radius: 15px;
+	        border-radius: 15px;
+	color: white;
+	font-size: 14px;
+}
+.input-title.data-v-75857bf4 {
+	position: relative;
+	top: -60rpx;
+	left: 50rpx;
+}
+.forget-pwd.data-v-75857bf4 {
+	text-align: right;
+}
+.err-text.data-v-75857bf4{
+	color: red;
+}
+

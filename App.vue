@@ -1,6 +1,10 @@
 <script>
 	export default {
 		onLaunch: function() {
+			uni.navigateTo({
+				url:"/pages/swiper/Swiper"
+			})
+			
 			console.log("onLaunch")
 		},
 		onShow: function() {

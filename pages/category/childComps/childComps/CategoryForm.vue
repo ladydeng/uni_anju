@@ -1,7 +1,7 @@
 <template>
 	<view class="form">
 		<view class="img-list">
-			<view class="img-item">
+			<view class="img-item margin-top">
 				<image src="http://localhost:3000/img/category/style01.png" class="banner-img" @click=""></image>
 			</view>
 			<view class="img-item">
@@ -59,4 +59,10 @@
 		
 		border-radius: 10px;
 	}
+	
+	/* #ifndef APP-PLUS || H5 */
+	.margin-top{
+		margin-top: 20rpx;
+	}
+	/* #endif */
 </style>

@@ -128,7 +128,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var ProfileUserInfo = function ProfileUserInfo() {__webpack_require__.e(/*! require.ensure | pages/profile/childComps/ProfileUserInfo */ "pages/profile/childComps/ProfileUserInfo").then((function () {return resolve(__webpack_require__(/*! ./childComps/ProfileUserInfo.vue */ 161));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var ProfileUserInfo = function ProfileUserInfo() {__webpack_require__.e(/*! require.ensure | pages/profile/childComps/ProfileUserInfo */ "pages/profile/childComps/ProfileUserInfo").then((function () {return resolve(__webpack_require__(/*! ./childComps/ProfileUserInfo.vue */ 183));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 

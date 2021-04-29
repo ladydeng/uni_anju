@@ -12,19 +12,19 @@
 			</view>
 			<view class="badge">
 				<view class="badge-item">
-					<image src="http://localhost:3000/img/live_home/share.png" class="badge-img"></image>
+					<image src="http://192.168.124.34:3000/img/live_home/share.png" class="badge-img"></image>
 				</view>
 				<view class="badge-item right">
 					<text class="news">{{ item.news }}</text>
-					<image src="http://localhost:3000/img/live_home/news.png" class="badge-img"></image>
+					<image src="http://192.168.124.34:3000/img/live_home/news.png" class="badge-img"></image>
 				</view>
 				<view class="badge-item right">
 					<text class="collection" :style="{ 'color': isCollectionShow ? item.collectionColor : '' }">{{ item.collection }}</text>
-					<image src="http://localhost:3000/img/live_home/collection.png" class="badge-img" @click.once="collectionIncrement(index,item.collection)"></image>
+					<image src="http://192.168.124.34:3000/img/live_home/collection.png" class="badge-img" @click.once="collectionIncrement(index,item.collection)"></image>
 				</view>
 				<view class="badge-item right">
 					<text class="good" :style="{ 'color': isGoodShow ? item.goodColor : '' }">{{ item.good }}</text>
-					<image src="http://localhost:3000/img/live_home/good.png" class="badge-img" @click.once="goodIncrement(index,item.good)"></image>
+					<image src="http://192.168.124.34:3000/img/live_home/good.png" class="badge-img" @click.once="goodIncrement(index,item.good)"></image>
 				</view>
 			</view>
 		</block>
@@ -42,9 +42,9 @@
 				// 生活圈信息
 				liveCircle:[
 					{
-						userImg:"http://localhost:3000/img/live_home/user.png",
+						userImg:"http://192.168.124.34:3000/img/live_home/user.png",
 						userName:"左音",
-						banner:"http://localhost:3000/img/live_home/life_circle01.png",
+						banner:"http://192.168.124.34:3000/img/live_home/life_circle01.png",
 						describe:"家中的美丽源于家具的选择，给人的感觉也会大有不同",
 						news:62,
 						collection:76,
@@ -53,9 +53,9 @@
 						goodColor:""
 					},
 					{
-						userImg:"http://localhost:3000/img/live_home/user.png",
+						userImg:"http://192.168.124.34:3000/img/live_home/user.png",
 						userName:"野客",
-						banner:"http://localhost:3000/img/live_home/life_circle02.png",
+						banner:"http://192.168.124.34:3000/img/live_home/life_circle02.png",
 						describe:"好的家具风格是由室内搭配去营造的，每一个装饰品都发挥着不一样的气息",
 						news:72,
 						collection:96,
@@ -64,9 +64,9 @@
 						goodColor:""
 					},
 					{
-						userImg:"http://localhost:3000/img/live_home/user.png",
+						userImg:"http://192.168.124.34:3000/img/live_home/user.png",
 						userName:"违心",
-						banner:"http://localhost:3000/img/live_home/life_circle03.png",
+						banner:"http://192.168.124.34:3000/img/live_home/life_circle03.png",
 						describe:"家居也并不是空间越大越好，需要合理搭配好各个位置的区域才可达到小而美的感觉",
 						news:102,
 						collection:126,
@@ -75,9 +75,9 @@
 						goodColor:""
 					},
 					{
-						userImg:"http://localhost:3000/img/live_home/user.png",
+						userImg:"http://192.168.124.34:3000/img/live_home/user.png",
 						userName:"时常饿",
-						banner:"http://localhost:3000/img/live_home/life_circle04.png",
+						banner:"http://192.168.124.34:3000/img/live_home/life_circle04.png",
 						describe:"室内不同风格的设计，能与家居充分产生不一样的家居感受，更具特色",
 						news:152,
 						collection:117,
@@ -86,9 +86,9 @@
 						goodColor:""
 					},
 					{
-						userImg:"http://localhost:3000/img/live_home/user.png",
+						userImg:"http://192.168.124.34:3000/img/live_home/user.png",
 						userName:"千夜",
-						banner:"http://localhost:3000/img/live_home/life_circle05.png",
+						banner:"http://192.168.124.34:3000/img/live_home/life_circle05.png",
 						describe:"按照风格的设计，可以使家呈现不同的气氛，风格的选定也是最重要的一点",
 						news:252,
 						collection:157,

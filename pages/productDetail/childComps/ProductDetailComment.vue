@@ -4,14 +4,14 @@
 			<text>用户评价（ {{ count }} ）</text>
 		</view>
 		<view class="user">
-			<image src="http://localhost:3000/img/product_detail/shop_img.png" class="user-img"></image>
+			<image src="http://192.168.124.34:3000/img/product_detail/shop_img.png" class="user-img"></image>
 			<text class="user-name">橘子柠檬</text>
 			<text class="user-badge">TA的空间</text>
 		</view>
 		<view class="comment">
 			<text class="comment-content">收到货后真是惊喜啊，这种品质的沙发在实体店至少1万左右，真是捡到宝了哈哈，上门的安装师傅都说沙发腿和底层布料都是高档沙发才有的！</text>
-			<image src="http://localhost:3000/img/product_detail/comment01.png" class="comment-img"></image>
-			<image src="http://localhost:3000/img/product_detail/comment02.png" class="comment-img"></image>
+			<image src="http://192.168.124.34:3000/img/product_detail/comment01.png" class="comment-img"></image>
+			<image src="http://192.168.124.34:3000/img/product_detail/comment02.png" class="comment-img"></image>
 			<view class="comment-badge">
 				<text class="badge-item">3150*2180*680 (L形入座右贵妃)；</text>
 				<text class="badge-item">棉麻混纺；</text>

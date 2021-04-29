@@ -3,14 +3,14 @@
 		<nav-bar>
 			<view class="content">
 				<view class="left">
-					<image src="http://localhost:3000/img/back.png" class="back-img" @click="back"></image>
-					<image src="http://localhost:3000/img/safe_guard/home_badge.png" class="home-img"></image>
+					<image src="http://192.168.124.34:3000/img/back.png" class="back-img" @click="back"></image>
+					<image src="http://192.168.124.34:3000/img/safe_guard/home_badge.png" class="home-img"></image>
 					<text class="title">购物保障</text>
 				</view>
 				
 				<!-- #ifdef APP-PLUS || H5 -->
 				<view class="right">
-					<image src="http://localhost:3000/img/safe_guard/share_badge.png" class="share-img"></image>
+					<image src="http://192.168.124.34:3000/img/safe_guard/share_badge.png" class="share-img"></image>
 				</view>
 				<!-- #endif -->
 			</view>

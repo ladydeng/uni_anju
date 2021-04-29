@@ -3,7 +3,7 @@
 		<nav-bar>
 			<view class="content">
 				<view class="back">
-					<image src="http://localhost:3000/img/back.png" class="back-img" @click="back"></image>
+					<image src="http://192.168.124.34:3000/img/back.png" class="back-img" @click="back"></image>
 				</view>
 				<view class="tab-control">
 					<block v-for="(item,index) in titles" :key="index">

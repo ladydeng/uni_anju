@@ -5,7 +5,7 @@
 			<text class="title">热门推荐</text>
 			<view class="more">
 				<text>查看全部</text>
-				<image src="http://localhost:3000/img/index/collocation/more.png" class="more-img"></image>
+				<image src="http://192.168.124.34:3000/img/index/collocation/more.png" class="more-img"></image>
 			</view>
 		</view>
 		<view class="product-list">
@@ -14,7 +14,7 @@
 					<view class="logo">
 						好货砍价
 					</view>
-					<image src="http://localhost:3000/img/index/recomend/sofa.png" class="product-img"></image>
+					<image src="http://192.168.124.34:3000/img/index/recomend/sofa.png" class="product-img"></image>
 					<view class="product-name">
 						<text class="product-badge">现货</text>
 						<text>沙发</text>
@@ -35,9 +35,9 @@
 					<view class="logo">
 						好货砍价
 					</view>
-					<image src="http://localhost:3000/img/index/recomend/tea_table.png" class="product-img"></image>
+					<image src="http://192.168.124.34:3000/img/index/recomend/tea_table.png" class="product-img"></image>
 					<view class="product-name">
-						<text class="sofa-badge">现货</text>
+						<text class="product-badge">现货</text>
 						<text>宜家茶几</text>
 					</view>
 					<text class="product-describe">
@@ -58,7 +58,7 @@
 					<view class="logo">
 						好货砍价
 					</view>
-					<image src="http://localhost:3000/img/index/recomend/partition.png" class="product-img"></image>
+					<image src="http://192.168.124.34:3000/img/index/recomend/partition.png" class="product-img"></image>
 					<view class="product-name">
 						<text class="product-badge">现货</text>
 						<text>隔板</text>
@@ -79,9 +79,9 @@
 					<view class="logo">
 						好货砍价
 					</view>
-					<image src="http://localhost:3000/img/index/recomend/book_case.png" class="product-img"></image>
+					<image src="http://192.168.124.34:3000/img/index/recomend/book_case.png" class="product-img"></image>
 					<view class="product-name">
-						<text class="sofa-badge">现货</text>
+						<text class="product-badge">现货</text>
 						<text>书柜</text>
 					</view>
 					<text class="product-describe">
@@ -102,7 +102,7 @@
 					<view class="logo">
 						好货砍价
 					</view>
-					<image src="http://localhost:3000/img/index/recomend/sofa_bench.png" class="product-img"></image>
+					<image src="http://192.168.124.34:3000/img/index/recomend/sofa_bench.png" class="product-img"></image>
 					<view class="product-name">
 						<text class="product-badge">现货</text>
 						<text>沙发凳</text>
@@ -123,9 +123,9 @@
 					<view class="logo">
 						好货砍价
 					</view>
-					<image src="http://localhost:3000/img/index/recomend/arm_chair.png" class="product-img"></image>
+					<image src="http://192.168.124.34:3000/img/index/recomend/arm_chair.png" class="product-img"></image>
 					<view class="product-name">
-						<text class="sofa-badge">现货</text>
+						<text class="product-badge">现货</text>
 						<text>靠背椅</text>
 					</view>
 					<text class="product-describe">
@@ -146,7 +146,7 @@
 					<view class="logo">
 						好货砍价
 					</view>
-					<image src="http://localhost:3000/img/index/recomend/tv_cabinet.png" class="product-img"></image>
+					<image src="http://192.168.124.34:3000/img/index/recomend/tv_cabinet.png" class="product-img"></image>
 					<view class="product-name">
 						<text class="product-badge">现货</text>
 						<text>电视机柜</text>
@@ -167,9 +167,9 @@
 					<view class="logo">
 						好货砍价
 					</view>
-					<image src="http://localhost:3000/img/index/recomend/living_room_sofa.png" class="product-img"></image>
+					<image src="http://192.168.124.34:3000/img/index/recomend/living_room_sofa.png" class="product-img"></image>
 					<view class="product-name">
-						<text class="sofa-badge">现货</text>
+						<text class="product-badge">现货</text>
 						<text>客厅沙发</text>
 					</view>
 					<text class="product-describe">
@@ -204,7 +204,7 @@
 	.more{
 		text-align: right;
 		color: #8a94a1;
-		font-size: 32rpx;
+		font-size: 14px;
 	}
 	.more-img{
 		width: 20rpx;
@@ -214,16 +214,8 @@
 		margin-left: 10rpx;
 	}
 	.title{
-		font-size: 20px;
+		font-size: 18px;
 	}
-/* 	.title {
-		display: block;
-		color: #232E3D;
-		font-size: 20px;
-		
-		margin-top: 20rpx;
-		margin-bottom: 20rpx;
-	} */
 
 	.product-list-row {
 		display: flex;
@@ -235,10 +227,11 @@
 	}
 
 	.logo {
-		width: 80rpx;
-		height: 80rpx;
+		width: 60rpx;
+		height: 60rpx;
+		font-size: 12px;
 		text-align: center;
-		/* line-height: 80rpx; */
+		line-height: 30rpx;
 		background-color: #232E3D;
 		color: white;
 		padding: 4rpx;
@@ -251,17 +244,22 @@
 
 	.product-badge {
 		display: inline-block;
-		width: 80rpx;
-		height: 40rpx;
+		width: 60rpx;
+		height: 30rpx;
 		text-align: center;
-		line-height: 40rpx;
+		line-height: 30rpx;
 		padding: 4rpx;
-		/* font-size: 12px; */
+		font-size: 12px;
 
 		background-color: #232E3D;
 		color: white;
 
 		border-radius: 20rpx;
+	}
+	
+	.product-name{
+		font-size: 16px;
+		line-height: 60rpx;
 	}
 
 	.product-describe,
@@ -273,6 +271,11 @@
 		color: red;
 		font-size: 14px;
 	}
+	
+	.style-badge{
+		margin-top: 10rpx;
+		margin-bottom: 20rpx;
+	}
 
 	.product-describe {
 		color: #8a94a1;
@@ -281,16 +284,16 @@
 
 	.item-badge {
 		display: inline-block;
-		width: 80rpx;
-		height: 40rpx;
+		width: 60rpx;
+		height: 30rpx;
 		text-align: center;
-		line-height: 40rpx;
-		/* font-size: 12px */
+		line-height: 30rpx;
+		font-size: 12px;
 		background-color: #8a94a1;
 		color: white;
 
 		border-radius: 20rpx;
 		padding: 4rpx;
-		margin-left: 4rpx;
+		margin-left: 6rpx;
 	}
 </style>

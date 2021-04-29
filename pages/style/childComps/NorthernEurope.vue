@@ -1,7 +1,7 @@
 <template>
 	<view class="northern-europe">
 		<view class="banner">
-			<image src="http://localhost:3000/img/style/northren_europe/northren_europe_banner.png" class="banner-img">
+			<image src="http://192.168.124.34:3000/img/style/northren_europe/northren_europe_banner.png" class="banner-img">
 			</image>
 			<text class="product-name">北欧时光</text>
 			<text class="product-decribe">
@@ -10,20 +10,20 @@
 		</view>
 		<view class="product-list">
 			<view class="product-item">
-				<image src="http://localhost:3000/img/style/northren_europe/northren_europe_style01.png"
+				<image src="http://192.168.124.34:3000/img/style/northren_europe/northren_europe_style01.png"
 					class="product-img"></image>
 			</view>
 			<view class="product-item">
-				<image src="http://localhost:3000/img/style/northren_europe/northren_europe_style02.png"
+				<image src="http://192.168.124.34:3000/img/style/northren_europe/northren_europe_style02.png"
 					class="product-img"></image>
 			</view>
 			<view class="product-item">
-				<image src="http://localhost:3000/img/style/northren_europe/northren_europe_style03.png"
+				<image src="http://192.168.124.34:3000/img/style/northren_europe/northren_europe_style03.png"
 					class="product-img"></image>
 			</view>
 		</view>
 		<view class="banner">
-			<image src="http://localhost:3000/img/style/northren_europe/yuemu_banner.png" class="banner-img">
+			<image src="http://192.168.124.34:3000/img/style/northren_europe/yuemu_banner.png" class="banner-img">
 			</image>
 			<text class="product-name">悦木</text>
 			<text class="product-decribe">
@@ -32,20 +32,20 @@
 		</view>
 		<view class="product-list">
 			<view class="product-item">
-				<image src="http://localhost:3000/img/style/northren_europe/yuemu_style01.png" class="product-img">
+				<image src="http://192.168.124.34:3000/img/style/northren_europe/yuemu_style01.png" class="product-img">
 				</image>
 			</view>
 			<view class="product-item">
-				<image src="http://localhost:3000/img/style/northren_europe/yuemu_style02.png" class="product-img">
+				<image src="http://192.168.124.34:3000/img/style/northren_europe/yuemu_style02.png" class="product-img">
 				</image>
 			</view>
 			<view class="product-item">
-				<image src="http://localhost:3000/img/style/northren_europe/yuemu_style03.png" class="product-img">
+				<image src="http://192.168.124.34:3000/img/style/northren_europe/yuemu_style03.png" class="product-img">
 				</image>
 			</view>
 		</view>
 		<view class="banner">
-			<image src="http://localhost:3000/img/style/northren_europe/wuye_banner.png" class="banner-img">
+			<image src="http://192.168.124.34:3000/img/style/northren_europe/wuye_banner.png" class="banner-img">
 			</image>
 			<text class="product-name">物也</text>
 			<text class="product-decribe">
@@ -54,19 +54,19 @@
 		</view>
 		<view class="product-list">
 			<view class="product-item">
-				<image src="http://localhost:3000/img/style/northren_europe/wuye_style01.png" class="product-img">
+				<image src="http://192.168.124.34:3000/img/style/northren_europe/wuye_style01.png" class="product-img">
 				</image>
 				<view class="product-item">
-					<image src="http://localhost:3000/img/style/northren_europe/wuye_style02.png" class="product-img">
+					<image src="http://192.168.124.34:3000/img/style/northren_europe/wuye_style02.png" class="product-img">
 					</image>
 				</view>
 				<view class="product-item">
-					<image src="http://localhost:3000/img/style/northren_europe/wuye_style03.png" class="product-img">
+					<image src="http://192.168.124.34:3000/img/style/northren_europe/wuye_style03.png" class="product-img">
 					</image>
 				</view>
 			</view>
 			<view class="banner">
-				<image src="http://localhost:3000/img/style/northren_europe/gaoge_banner.png" class="banner-img">
+				<image src="http://192.168.124.34:3000/img/style/northren_europe/gaoge_banner.png" class="banner-img">
 				</image>
 				<text class="product-name">高阁</text>
 				<text class="product-decribe">
@@ -75,15 +75,15 @@
 			</view>
 			<view class="product-list">
 				<view class="product-item">
-					<image src="http://localhost:3000/img/style/northren_europe/gaoge_style01.png" class="product-img">
+					<image src="http://192.168.124.34:3000/img/style/northren_europe/gaoge_style01.png" class="product-img">
 					</image>
 				</view>
 				<view class="product-item">
-					<image src="http://localhost:3000/img/style/northren_europe/gaoge_style02.png" class="product-img">
+					<image src="http://192.168.124.34:3000/img/style/northren_europe/gaoge_style02.png" class="product-img">
 					</image>
 				</view>
 				<view class="product-item">
-					<image src="http://localhost:3000/img/style/northren_europe/gaoge_style03.png" class="product-img">
+					<image src="http://192.168.124.34:3000/img/style/northren_europe/gaoge_style03.png" class="product-img">
 					</image>
 				</view>
 			</view>

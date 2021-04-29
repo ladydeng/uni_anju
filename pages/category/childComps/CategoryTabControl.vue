@@ -77,8 +77,8 @@
 	
 	.control-item{
 		width: 100%;
-		height: 200rpx;
-		line-height: 200rpx;
+		height: 180rpx;
+		line-height: 180rpx;
 	}
 	
 	.active{

@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "分类",
-  "navigationStyle": "custom",
-  "usingComponents": {
-    "category-nav-bar": "/pages/category/childComps/CategoryNavBar",
-    "category-tab-control": "/pages/category/childComps/CategoryTabControl"
-  }
-}

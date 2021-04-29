@@ -3,18 +3,18 @@
 		<view class="bottom-bar">
 			<view class="bar-list">
 				<view class="bar-item" @click="adviserClick">
-					<image src="http://localhost:3000/img/bottomBar/adviser.png" class="bar-img"></image>
+					<image src="http://192.168.124.34:3000/img/bottomBar/adviser.png" class="bar-img"></image>
 					<text class="bar-text">家居顾问</text>
 				</view>
 				<view class="bar-item" @click="collectionClick">
-					<image src="http://localhost:3000/img/bottomBar/collection.png" class="bar-img"></image>
+					<image src="http://192.168.124.34:3000/img/bottomBar/collection.png" class="bar-img"></image>
 					<text class="bar-text">收藏</text>
 				</view>
 				<view class="bar-item" @click="cartClick">
-					<image src="http://localhost:3000/img/bottomBar/cart.png" class="bar-img"></image>
+					<image src="http://192.168.124.34:3000/img/bottomBar/cart.png" class="bar-img"></image>
 					<text class="bar-text">购物车</text>
 				</view>
-				<view class="bar-item" @click="addToCart">
+				<view class="bar-item" @click.once()="addToCart">
 					<text class="bar-text add-to-cart">加入购物车</text>
 				</view>
 			</view>
@@ -48,6 +48,25 @@
 			},
 			addToCart(){
 				console.log("加入购物车")
+				
+					// 把该商品数据保存在数据库购物车表中
+					// console.log(this.product)
+					console.log("保存该商品数据到购物车表" + this.$store.state.product.name)
+					uni.request({
+						url: "http://192.168.124.34:3000/addToCart",
+						method: "GET",
+						data: this.$store.state.product,
+						success: res => {
+							console.log("请求成功")
+							uni.showToast({
+								title:"加入购物车成功！"
+							})
+						},
+						fail: err => {
+							console.log("请求失败")
+						}
+					})
+					
 			}
 		}
 	}

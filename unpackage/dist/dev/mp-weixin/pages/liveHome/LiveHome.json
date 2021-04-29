@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "生活家",
-  "usingComponents": {
-    "hot-tab": "/pages/liveHome/childComps/HotTab",
-    "today-meitu": "/pages/liveHome/childComps/TodayMeitu",
-    "live-circle": "/pages/liveHome/childComps/LiveCircle"
-  }
-}

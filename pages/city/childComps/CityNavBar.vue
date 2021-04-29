@@ -2,7 +2,7 @@
 	<view class="main-navbar">
 		<nav-bar>
 			<view class="content">
-				<image src="http://localhost:3000/img/city/delete.png" class="city-icon" @click="closeCity"></image>
+				<image src="http://192.168.124.34:3000/img/city/delete.png" class="city-icon" @click="closeCity"></image>
 				<text class="city-text">切换城市</text>
 			</view>
 		</nav-bar>

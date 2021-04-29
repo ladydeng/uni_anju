@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "沙发",
-  "usingComponents": {
-    "sofa-product-list": "/pages/sofa/childComps/SofaProductList"
-  }
-}

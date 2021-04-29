@@ -4,10 +4,10 @@
 			<text>生活家搭配</text>
 		</view>
 		<view class="collection-content">
-			<image src="http://localhost:3000/img/product_detail/live_home_banner.png" class="collection-banner"></image>
+			<image src="http://192.168.124.34:3000/img/product_detail/live_home_banner.png" class="collection-banner"></image>
 			<view class="content-shop">
 				<view class="content-shop-info">
-					<image src="http://localhost:3000/img/product_detail/shop_img.png" class="shop-img"></image>
+					<image src="http://192.168.124.34:3000/img/product_detail/shop_img.png" class="shop-img"></image>
 					<view class="shop-info">
 						<text class="shop-name">橘子柠檬</text>
 						<text class="shop-address">福州市.三盛国际公园</text>

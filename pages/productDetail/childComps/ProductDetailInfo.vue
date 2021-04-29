@@ -2,7 +2,7 @@
 	<view class="product-detail-info">
 		<view class="product-banner">
 			<view class="img-box">
-				<image src="http://localhost:3000/img/product_detail/sofa_banner.png" class="sofa-img"></image>
+				<image :src="product.src" class="sofa-img"></image>
 			</view>
 			<view class="banner-badge">
 				<text>7天无理由退货</text>
@@ -14,14 +14,14 @@
 		<view class="product-info">
 			<view class="title">
 				<text class="title-badge">多规格</text>
-				<text class="product-name">新主题布艺沙发</text>
+				<text class="product-name">{{ product.name }}</text>
 			</view>
-			<text class="product-decribe">极简经典设计 天然亲肤</text>
-			<text class="product-price">￥1350-7580</text>
+			<text class="product-decribe">{{ product.describe }}</text>
+			<text class="product-price">￥{{ product.price }}</text>
 			<text class="price-describe">卖场价： ￥2709-15179</text>
 			<text class="live-house">Live House</text>
 		</view>
-		
+
 		<view class="active">
 			<view class="active-first">
 				<view class="active-title">
@@ -45,12 +45,26 @@
 				<view class="active-select-size">
 					<text>请选择规格尺寸</text>
 				</view>
-			</view>		
+			</view>
 		</view>
 	</view>
 </template>
 
 <script>
+	export default {
+		data() {
+			return {
+				product: ""
+			}
+		},
+		mounted() {
+			// 获取vuex中保存的商品数据
+			this.product = this.$store.state.product
+		},
+		methods: {
+
+		}
+	}
 </script>
 
 <style scoped>
@@ -138,51 +152,52 @@
 
 		background-color: #F2F3F7;
 	}
-	
-	.active{
+
+	.active {
 		padding: 0 15px;
 	}
-	
-	.active-item{
+
+	.active-item {
 		width: 90%;
 		height: 50rpx;
 		/* background-color: red; */
-		
+
 		/* 超出部分文本以...显示 */
 		/* text-overflow: ellipsis; */
 		overflow: hidden;
-		
+
 		margin-bottom: 10rpx;
 	}
-	
-	.active-first, .active-second{
+
+	.active-first,
+	.active-second {
 		display: flex;
 		border-bottom: 1px solid #F2F3F7;
 		padding: 10px 0;
 	}
-	
-	.active-title{
+
+	.active-title {
 		flex: 2;
 		color: #8A94A1;
 	}
-	
-	.active-list{
+
+	.active-list {
 		flex: 8;
 		font-size: 14px;
 	}
-	
-	.active-select-size{
+
+	.active-select-size {
 		flex: 8;
 		font-size: 18px;
 	}
-	
-	.reduce{
+
+	.reduce {
 		display: inline-block;
 		border: 1rpx solid #232E3D;
 		border-radius: 10rpx;
 		padding-left: 4rpx;
 		padding-right: 6rpx;
-		
+
 		margin-right: 6rpx;
 	}
 </style>

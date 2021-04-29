@@ -1,1 +1,0 @@
-<view class="new-product-navbar"><nav-bar vue-id="638b3547-1" bind:__l="__l" vue-slots="{{['default']}}"><view class="content"><view class="left"><image class="back" src="http://localhost:3000/img/back.png" data-event-opts="{{[['tap',[['back',['$event']]]]]}}" bindtap="__e"></image><text>本期新品</text></view><view class="right"><text>上期新品</text></view></view></nav-bar></view>

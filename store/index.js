@@ -15,7 +15,9 @@ const store = new Vuex.Store({
 		// 购物车数据
 		shoppingCart:[],
 		// H5用户账号
-		userAccount:""
+		userAccount:"",
+		// 保存商品数据，用作商品详情页渲染
+		product:""
 	},
 	mutations:{
 		// 设置currentCity
@@ -38,6 +40,11 @@ const store = new Vuex.Store({
 		// 删除H5保存的用户账号
 		deleteUserAccount(state,payLoad){
 			state.userAccount = ""
+		},
+		
+		// 保存商品数据
+		savaProduct(state,product){
+			state.product = product
 		}
 	}
 })

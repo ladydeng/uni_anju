@@ -32,8 +32,8 @@
 			ProductDetailRecomend,
 			ProductDetailBaseInfo
 		},
-		created() {
-
+		onLoad() {
+			
 		},
 		methods: {
 

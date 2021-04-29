@@ -68,7 +68,7 @@
 
 					// 发送请求
 					uni.request({
-						url: " http://localhost:4000/login",
+						url: " http://192.168.124.34:4000/login",
 						method: "GET",
 						// method: "POST",
 						// // post请求必须设置，否则后端获取的req.method为options

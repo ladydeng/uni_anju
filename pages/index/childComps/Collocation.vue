@@ -5,25 +5,25 @@
 				<text class="title">生活家搭配</text>
 				<view class="more" @click="toHotStyle">
 					<text>查看全部</text>
-					<image src="http://localhost:3000/img/index/collocation/more.png" class="more-img"></image>
+					<image src="http://192.168.124.34:3000/img/index/collocation/more.png" class="more-img"></image>
 				</view>
 			</view>
 			<view class="cabinet-banner">
-				<image src="http://localhost:3000/img/index/collocation/banner_cabinet.png" class="banner-img"></image>
+				<image src="http://192.168.124.34:3000/img/index/collocation/banner_cabinet.png" class="banner-img"></image>
 			</view>
 			<view class="cabinet-style">
 				<view class="cabinet-style-item">
-					<image src="http://localhost:3000/img/index/collocation/cabinet_style01.png" class="product-img"></image>
+					<image src="http://192.168.124.34:3000/img/index/collocation/cabinet_style01.png" class="product-img"></image>
 					<text class="product-name">实物储物茶几</text>
 					<text class="product-price">￥1472</text>
 				</view>
 				<view class="cabinet-style-item">
-					<image src="http://localhost:3000/img/index/collocation/cabinet_style02.png" class="product-img"></image>
+					<image src="http://192.168.124.34:3000/img/index/collocation/cabinet_style02.png" class="product-img"></image>
 					<text class="product-name">实木电视柜</text>
 					<text class="product-price">￥1760</text>
 				</view>	
 				<view class="cabinet-style-item">
-					<image src="http://localhost:3000/img/index/collocation/cabinet_style03.png" class="product-img"></image>
+					<image src="http://192.168.124.34:3000/img/index/collocation/cabinet_style03.png" class="product-img"></image>
 					<text class="product-name">实物储物茶几</text>
 					<text class="product-price">￥1760</text>
 				</view>
@@ -32,21 +32,21 @@
 			<view class="box"></view>
 
 			<view class="cabinet-banner">
-				<image src="http://localhost:3000/img/index/collocation/banner_bed.png" class="banner-img"></image>
+				<image src="http://192.168.124.34:3000/img/index/collocation/banner_bed.png" class="banner-img"></image>
 			</view>
 			<view class="cabinet-style">
 				<view class="cabinet-style-item">
-					<image src="http://localhost:3000/img/index/collocation/bed_style01.png" class="product-img"></image>
+					<image src="http://192.168.124.34:3000/img/index/collocation/bed_style01.png" class="product-img"></image>
 					<text class="product-name">白橡木实木床</text>
 					<text class="product-price">￥1778</text>
 				</view>
 				<view class="cabinet-style-item">
-					<image src="http://localhost:3000/img/index/collocation/bed_style02.png" class="product-img"></image>
+					<image src="http://192.168.124.34:3000/img/index/collocation/bed_style02.png" class="product-img"></image>
 					<text class="product-name">白橡木梳妆台</text>
 					<text class="product-price">￥1800</text>
 				</view>
 				<view class="cabinet-style-item">
-					<image src="http://localhost:3000/img/index/collocation/bed_style03.png" class="product-img"></image>
+					<image src="http://192.168.124.34:3000/img/index/collocation/bed_style03.png" class="product-img"></image>
 					<text class="product-name">白橡木三门衣柜</text>
 					<text class="product-price">￥5480</text>
 				</view>
@@ -105,6 +105,7 @@
 
 	.cabinet-style-item {
 		flex: 1;
+		padding: 20rpx;
 	}
 
 	.banner-img {
@@ -115,18 +116,18 @@
 	}
 
 	.product-img {
-		width: 230rpx;
-		height: 184rpx;
+		width: 200rpx;
+		height: 134rpx;
 	}
 
 	.title {
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	.more {
 		text-align: right;
 		color: #8a94a1;
-		font-size: 32rpx;
+		font-size: 14px;
 	}
 
 	.more-img {
@@ -145,5 +146,6 @@
 
 	.product-name {
 		display: block;
+		font-size: 16px;
 	}
 </style>

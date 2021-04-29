@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "本期新品",
-  "navigationStyle": "custom",
-  "usingComponents": {
-    "new-product-nav-bar": "/pages/newProduct/childComps/NewProductNavBar",
-    "new-product-list": "/pages/newProduct/childComps/NewProductList"
-  }
-}

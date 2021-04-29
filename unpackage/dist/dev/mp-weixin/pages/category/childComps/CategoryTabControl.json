@@ -1,8 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "category-classification": "/pages/category/childComps/childComps/CategoryClassification",
-    "category-form": "/pages/category/childComps/childComps/CategoryForm",
-    "category-space": "/pages/category/childComps/childComps/CategorySpace"
-  }
-}

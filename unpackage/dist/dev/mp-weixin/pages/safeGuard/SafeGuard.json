@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "购物保障",
-  "navigationStyle": "custom",
-  "usingComponents": {
-    "safe-guard-nav-bar": "/pages/safeGuard/childComps/SafeGuardNavBar",
-    "safe-guard-content": "/pages/safeGuard/childComps/SafeGuardContent"
-  }
-}

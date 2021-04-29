@@ -3,7 +3,7 @@
 		<nav-bar>
 			<view class="content">
 				<view class="left">
-					<image src="http://localhost:3000/img/back.png" class="back" @click="back"></image>
+					<image src="http://192.168.124.34:3000/img/back.png" class="back" @click="back"></image>
 					<text>本期新品</text>
 				</view>
 				<view class="right">

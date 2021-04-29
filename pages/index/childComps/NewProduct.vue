@@ -5,12 +5,12 @@
 			<text class="title">本期新品</text>
 			<view class="more" @click="toNewProduct">
 				<text>查看全部</text>
-				<image src="http://localhost:3000/img/index/collocation/more.png" class="more-img"></image>
+				<image src="http://192.168.124.34:3000/img/index/collocation/more.png" class="more-img"></image>
 			</view>
 		</view>
 		<view class="product-list">
 			<view class="product-item">
-				<image src="http://localhost:3000/img/index/new_product/product_1.png" class="product-img"></image>
+				<image src="http://192.168.124.34:3000/img/index/new_product/product01.png" class="product-img"></image>
 				<text class="product-name">
 					藤椅沙发
 				</text>
@@ -20,7 +20,7 @@
 				<text class="product-price">￥2590-5570</text>
 			</view>
 			<view class="product-item">
-				<image src="http://localhost:3000/img/index/new_product/product_2.png" class="product-img"></image>
+				<image src="http://192.168.124.34:3000/img/index/new_product/product02.png" class="product-img"></image>
 				<text class="product-name">
 					贵妃椅
 				</text>
@@ -30,7 +30,7 @@
 				<text class="product-price">￥980</text>
 			</view>
 			<view class="product-item">
-				<image src="http://localhost:3000/img/index/new_product/product_3.png" class="product-img"></image>
+				<image src="http://192.168.124.34:3000/img/index/new_product/product03.png" class="product-img"></image>
 				<text class="product-name">
 					橡木床
 				</text>
@@ -68,6 +68,10 @@
 </script>
 
 <style>
+	.new-product{
+		padding-bottom: 20rpx;
+	}
+	
 	.func{
 		display: flex;
 		margin-top: 20rpx;
@@ -79,7 +83,7 @@
 	.more{
 		text-align: right;
 		color: #8a94a1;
-		font-size: 32rpx;
+		font-size: 14px;
 	}
 	.more-img{
 		width: 20rpx;
@@ -89,7 +93,7 @@
 		margin-left: 10rpx;
 	}
 	.title{
-		font-size: 20px;
+		font-size: 18px;
 	}
 	/* .title{
 		display: block;
@@ -103,22 +107,24 @@
 	
 	.product-item{
 		flex: 1;
-		margin-left: 10rpx;
+		box-sizing: border-box;
+		padding: 20rpx;
 	}
 	.product-name, .product-decribe, .product-price{
 		display: block;
 	}
 	.product-name{
-		/* font-size: 16px; */
+		font-size: 16px;
 	}
 	
 	.product-img{
-		width: 230rpx;
-		height: 184rpx;
+		width: 200rpx;
+		height: 134rpx;
+		
 	}
 	.product-decribe{
-		font-size: 14px;
-		line-height: 40rpx;
+		font-size: 13px;
+		line-height: 45rpx;
 		color: #8a94a1;
 	}
 	.product-price{

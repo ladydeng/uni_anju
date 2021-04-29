@@ -1,1 +1,0 @@
-<view class="navbar data-v-882157f4" style="{{'height:'+(boxHeight*2+'rpx')+';'}}"><view class="fixed data-v-882157f4"><view class="navbar-margin-top data-v-882157f4" style="{{'height:'+(statusBarHeight+'px')+';'}}"></view><view class="navbar-content data-v-882157f4" style="{{'height:'+(navbarHeight+'px')+';'+('width:'+(navbarWidth+'px')+';')}}"><slot></slot></view></view></view>

@@ -3,24 +3,24 @@
 		<view class="meitu-list">
 			<view class="meitu-row">
 				<view class="meitu-item">
-					<image src="http://localhost:3000/img/live_home/meitu01.png" class="meitu-img"></image>
+					<image src="http://192.168.124.34:3000/img/live_home/meitu01.png" class="meitu-img"></image>
 				</view>
 				<view class="meitu-item">
-					<image src="http://localhost:3000/img/live_home/meitu02.png" class="meitu-img"></image>
+					<image src="http://192.168.124.34:3000/img/live_home/meitu02.png" class="meitu-img"></image>
 				</view>
 				<view class="meitu-item">
-					<image src="http://localhost:3000/img/live_home/meitu03.png" class="meitu-img"></image>
+					<image src="http://192.168.124.34:3000/img/live_home/meitu03.png" class="meitu-img"></image>
 				</view>
 			</view>
 			<view class="meitu-row">
 				<view class="meitu-item">
-					<image src="http://localhost:3000/img/live_home/meitu04.png" class="meitu-img"></image>
+					<image src="http://192.168.124.34:3000/img/live_home/meitu04.png" class="meitu-img"></image>
 				</view>
 				<view class="meitu-item">
-					<image src="http://localhost:3000/img/live_home/meitu05.png" class="meitu-img"></image>
+					<image src="http://192.168.124.34:3000/img/live_home/meitu05.png" class="meitu-img"></image>
 				</view>
 				<view class="meitu-item">
-					<image src="http://localhost:3000/img/live_home/meitu06.png" class="meitu-img"></image>
+					<image src="http://192.168.124.34:3000/img/live_home/meitu06.png" class="meitu-img"></image>
 				</view>
 			</view>
 		</view>

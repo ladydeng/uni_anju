@@ -1,13 +1,13 @@
 <template>
 	<view class="hot-tab">
 		<view class="hot-tab-item">
-			<image src="http://localhost:3000/img/live_home/hot_tab01.png" class="hot-tab-img"></image>
+			<image src="http://192.168.124.34:3000/img/live_home/hot_tab01.png" class="hot-tab-img"></image>
 		</view>
 		<view class="hot-tab-item">
-			<image src="http://localhost:3000/img/live_home/hot_tab02.png" class="hot-tab-img"></image>
+			<image src="http://192.168.124.34:3000/img/live_home/hot_tab02.png" class="hot-tab-img"></image>
 		</view>
 		<view class="hot-tab-item">
-			<image src="http://localhost:3000/img/live_home/hot_tab03.png" class="hot-tab-img"></image>
+			<image src="http://192.168.124.34:3000/img/live_home/hot_tab03.png" class="hot-tab-img"></image>
 		</view>
 	</view>
 </template>

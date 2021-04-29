@@ -1,13 +1,13 @@
 <template>
 	<view class="safe-guard-content">
 		<view class="banner">
-			<image src="http://localhost:3000/img/safe_guard/safe_guard_banner.png" class="banner-img"></image>
+			<image src="http://192.168.124.34:3000/img/safe_guard/safe_guard_banner.png" class="banner-img"></image>
 			<text class="title">家具类商品</text>
 		</view>
 		<view class="content">
 			<view class="content-item">
 				<view class="content-badge">
-					<image src="http://localhost:3000/img/safe_guard/home.png" class="badge-img"></image>
+					<image src="http://192.168.124.34:3000/img/safe_guard/home.png" class="badge-img"></image>
 					<view class="content-title">
 						<text class="line"></text>
 						<text class="line-title">品牌制造商直供</text>
@@ -28,7 +28,7 @@
 			</view>
 			<view class="content-item">
 				<view class="content-badge">
-					<image src="http://localhost:3000/img/safe_guard/protect.png" class="badge-img"></image>
+					<image src="http://192.168.124.34:3000/img/safe_guard/protect.png" class="badge-img"></image>
 					<view class="content-title">
 						<text class="line"></text>
 						<text class="line-title">3年质保 终身维护</text>
@@ -41,7 +41,7 @@
 			</view>
 			<view class="content-item">
 				<view class="content-badge">
-					<image src="http://localhost:3000/img/safe_guard/transport.png" class="badge-img"></image>
+					<image src="http://192.168.124.34:3000/img/safe_guard/transport.png" class="badge-img"></image>
 					<view class="content-title">
 						<text class="line"></text>
 						<text class="line-title">免费送货上门 免费安装</text>
@@ -56,7 +56,7 @@
 			</view>
 			<view class="content-item">
 				<view class="content-badge">
-					<image src="http://localhost:3000/img/safe_guard/return_goods.png" class="badge-img"></image>
+					<image src="http://192.168.124.34:3000/img/safe_guard/return_goods.png" class="badge-img"></image>
 					<view class="content-title">
 						<text class="line"></text>
 						<text class="line-title">七天无理由退货</text>
@@ -71,7 +71,7 @@
 			</view>
 			<view class="content-item">
 				<view class="content-badge">
-					<image src="http://localhost:3000/img/safe_guard/delay.png" class="badge-img"></image>
+					<image src="http://192.168.124.34:3000/img/safe_guard/delay.png" class="badge-img"></image>
 					<view class="content-title">
 						<text class="line"></text>
 						<text class="line-title">延期发货保障</text>
@@ -84,7 +84,7 @@
 			</view>
 			<view class="content-item">
 				<view class="content-badge">
-					<image src="http://localhost:3000/img/safe_guard/price.png" class="badge-img"></image>
+					<image src="http://192.168.124.34:3000/img/safe_guard/price.png" class="badge-img"></image>
 					<view class="content-title">
 						<text class="line"></text>
 						<text class="line-title">90天报价</text>
@@ -98,7 +98,7 @@
 			</view>
 			<view class="content-item">
 				<view class="content-badge">
-					<image src="http://localhost:3000/img/safe_guard/location.png" class="badge-img"></image>
+					<image src="http://192.168.124.34:3000/img/safe_guard/location.png" class="badge-img"></image>
 					<view class="content-title">
 						<text class="line"></text>
 						<text class="line-title">线下真实体验</text>
@@ -112,7 +112,7 @@
 			</view>
 			<view class="content-item">
 				<view class="content-badge">
-					<image src="http://localhost:3000/img/safe_guard/serve.png" class="badge-img"></image>
+					<image src="http://192.168.124.34:3000/img/safe_guard/serve.png" class="badge-img"></image>
 					<view class="content-title">
 						<text class="line"></text>
 						<text class="line-title">家具代存储服务</text>
@@ -125,7 +125,7 @@
 			</view>
 			<view class="content-item">
 				<view class="content-badge">
-					<image src="http://localhost:3000/img/safe_guard/free_shipping.png" class="badge-img"></image>
+					<image src="http://192.168.124.34:3000/img/safe_guard/free_shipping.png" class="badge-img"></image>
 					<view class="content-title">
 						<text class="line"></text>
 						<text class="line-title">全国包邮（除偏远地区）</text>

@@ -3,13 +3,13 @@
 		<nav-bar>
 			<view class="content">
 				<view class="left">
-					<image src="http://localhost:3000/img/index/navbar/logo.png" class="logo"></image>
+					<image src="http://192.168.124.34:3000/img/index/navbar/logo.png" class="logo"></image>
 					<text v-if="getCurrentCity" class="select">{{ getCurrentCity }}</text>
 					<text v-else class="select">选择城市</text>
-					<image src="http://localhost:3000/img/index/navbar/down.png" class="down" @click="selectCity"></image>
+					<image src="http://192.168.124.34:3000/img/index/navbar/down.png" class="down" @click="selectCity"></image>
 				</view>
 				<view class="right">
-					<image src="http://localhost:3000/img/index/navbar/search.png" class="search"></image>
+					<image src="http://192.168.124.34:3000/img/index/navbar/search.png" class="search"></image>
 				</view>
 			</view>
 		</nav-bar>

@@ -3,7 +3,7 @@
 		<!-- #ifndef H5 -->
 		<view class="authorize" v-if="isShow">
 			<!-- 未授权 -->
-			<button type="default" open-type="getUserInfo" @getuserinfo="getUserInfo">{{ title }}</button>
+			<button type="default" open-type="getUserInfo" @getuserinfo="getUserInfo">请点击授权</button>
 		</view>
 		<view class="user-info" v-else>
 			<!-- 授权 -->
@@ -16,7 +16,7 @@
 		<view class="user-info">
 			<!-- H5 -->
 			<view v-if="getUserAccount">
-				<image src="http://localhost:3000/img/profile/user.png" class="avatar-url"></image>
+				<image src="http://192.168.124.34:3000/img/profile/user.png" class="avatar-url"></image>
 				<text class="nick-name">{{ $store.state.userAccount }}</text>
 			</view>
 			<view v-else>
@@ -27,68 +27,70 @@
 
 		<view class="tab-control">
 			<view class="tab-control-item border-right">
-				<image src="http://localhost:3000/img/profile/no_pay.png" class="tab-item-img"></image>
+				<image src="http://192.168.124.34:3000/img/profile/no_pay.png" class="tab-item-img"></image>
 				<text>未付款</text>
 			</view>
 			<view class="tab-control-item border-right">
-				<image src="http://localhost:3000/img/profile/finish_pay.png" class="tab-item-img"></image>
+				<image src="http://192.168.124.34:3000/img/profile/finish_pay.png" class="tab-item-img"></image>
 				<text>已支付</text>
 			</view>
 			<view class="tab-control-item">
-				<image src="http://localhost:3000/img/profile/finish.png" class="tab-item-img"></image>
+				<image src="http://192.168.124.34:3000/img/profile/finish.png" class="tab-item-img"></image>
 				<text>已完成</text>
 			</view>
 		</view>
 
 		<view class="func">
 			<view class="func-item">
-				<image src="http://localhost:3000/img/profile/coupon.png" class="func-item-badge"></image>
+				<image src="http://192.168.124.34:3000/img/profile/coupon.png" class="func-item-badge"></image>
 				<text>我的优惠券</text>
-				<image src="http://localhost:3000/img/profile/enter.png" class="enter-img"></image>
+				<image src="http://192.168.124.34:3000/img/profile/enter.png" class="enter-img"></image>
 			</view>
 			<view class="func-item">
-				<image src="http://localhost:3000/img/profile/collection.png" class="func-item-badge"></image>
+				<image src="http://192.168.124.34:3000/img/profile/collection.png" class="func-item-badge"></image>
 				<text>我的收藏</text>
-				<image src="http://localhost:3000/img/profile/enter.png" class="enter-img"></image>
+				<image src="http://192.168.124.34:3000/img/profile/enter.png" class="enter-img"></image>
 			</view>
 			<view class="func-item double-border">
-				<image src="http://localhost:3000/img/profile/news.png" class="func-item-badge"></image>
+				<image src="http://192.168.124.34:3000/img/profile/news.png" class="func-item-badge"></image>
 				<text>我的消息</text>
-				<image src="http://localhost:3000/img/profile/enter.png" class="enter-img"></image>
+				<image src="http://192.168.124.34:3000/img/profile/enter.png" class="enter-img"></image>
 			</view>
 			<view class="func-item double-border">
-				<image src="http://localhost:3000/img/profile/customer_service.png" class="func-item-badge"></image>
+				<image src="http://192.168.124.34:3000/img/profile/customer_service.png" class="func-item-badge"></image>
 				<text>联系客服</text>
-				<image src="http://localhost:3000/img/profile/enter.png" class="enter-img"></image>
+				<image src="http://192.168.124.34:3000/img/profile/enter.png" class="enter-img"></image>
 			</view>
 			<view class="func-item">
-				<image src="http://localhost:3000/img/profile/position.png" class="func-item-badge"></image>
+				<image src="http://192.168.124.34:3000/img/profile/position.png" class="func-item-badge"></image>
 				<text>收货地址</text>
-				<image src="http://localhost:3000/img/profile/enter.png" class="enter-img"></image>
+				<image src="http://192.168.124.34:3000/img/profile/enter.png" class="enter-img"></image>
 			</view>
 			<view class="func-item">
-				<image src="http://localhost:3000/img/profile/problem.png" class="func-item-badge"></image>
+				<image src="http://192.168.124.34:3000/img/profile/problem.png" class="func-item-badge"></image>
 				<text>问题反馈</text>
-				<image src="http://localhost:3000/img/profile/enter.png" class="enter-img"></image>
+				<image src="http://192.168.124.34:3000/img/profile/enter.png" class="enter-img"></image>
 			</view>
 			<view class="func-item">
-				<image src="http://localhost:3000/img/profile/count.png" class="func-item-badge"></image>
+				<image src="http://192.168.124.34:3000/img/profile/count.png" class="func-item-badge"></image>
 				<text>账号安全</text>
-				<image src="http://localhost:3000/img/profile/enter.png" class="enter-img"></image>
+				<image src="http://192.168.124.34:3000/img/profile/enter.png" class="enter-img"></image>
 			</view>
 			<view class="func-item">
-				<image src="http://localhost:3000/img/profile/setting.png" class="func-item-badge"></image>
+				<image src="http://192.168.124.34:3000/img/profile/setting.png" class="func-item-badge"></image>
 				<text>通用设置</text>
-				<image src="http://localhost:3000/img/profile/enter.png" class="enter-img"></image>
+				<image src="http://192.168.124.34:3000/img/profile/enter.png" class="enter-img"></image>
 			</view>
 			<view class="func-item">
-				<image src="http://localhost:3000/img/profile/about.png" class="func-item-badge"></image>
+				<image src="http://192.168.124.34:3000/img/profile/about.png" class="func-item-badge"></image>
 				<text>关于安居</text>
-				<image src="http://localhost:3000/img/profile/enter.png" class="enter-img"></image>
+				<image src="http://192.168.124.34:3000/img/profile/enter.png" class="enter-img"></image>
 			</view>
 		</view>
         
+		<!-- #ifdef H5 -->
 		<button type="default" @click="loginOut">退出登录</button>
+		<!-- #endif -->
 	</view>
 </template>
 
@@ -96,7 +98,6 @@
 	export default {
 		data() {
 			return {
-				title: "未授权",
 				isShow: true,
 
 				// 本地存储的用户信息
@@ -126,7 +127,7 @@
 				console.log(111)
 				uni.getSetting({
 					success: res => {
-						if (!res.authSetting['scope.userInfo']) {
+						if (res.authSetting['scope.userInfo']) {
 							//这里调用授权
 							console.log("当前未授权");
 						} else {
@@ -138,6 +139,8 @@
 								success: res => {
 									//把用户信息保存在vuex
 									this.$store.commit("saveUser", res.userInfo)
+									console.log("33")
+									console.log(res.userInfo)
 
 									// 进行本地存储
 									uni.setStorageSync("userInfo", res.userInfo)
@@ -244,19 +247,27 @@
 			
 			// 退出登录
 			loginOut(){
-				uni.showModal({
-					title:"提示框",
-					content:"请确认是否要退出登录！",
-					success: res => {
-						if(res.confirm == true){
-							// 删除本地存储的用户账户
-							uni.removeStorageSync("userAccount")
-							
-							// 删除vuex的用户账户
-							this.$store.commit("deleteUserAccount")
+				if(uni.getStorageSync("userAccount")){
+					uni.showModal({
+						title:"提示框",
+						content:"请确认是否要退出登录！",
+						success: res => {
+							if(res.confirm == true){
+								// 删除本地存储的用户账户
+								uni.removeStorageSync("userAccount")
+								
+								// 删除vuex的用户账户
+								this.$store.commit("deleteUserAccount")
+							}
 						}
-					}
-				})
+					})
+				}else{
+					uni.showToast({
+						title:"您当前未登录！",
+						icon:"none"
+					})
+				}
+				
 			}
 		},
 		computed:{

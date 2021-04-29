@@ -6,13 +6,13 @@
 		<view class="product-list">
 			<view class="product-row">
 				<view class="product-item margin-right">
-					<image src="http://localhost:3000/img/product_detail/recomend03.png" class="product-img"></image>
+					<image src="http://192.168.124.34:3000/img/product_detail/recomend03.png" class="product-img"></image>
 					<text class="product-name">比邻沙发</text>
 					<text class="product-describe">意大利经典设计 鹅绒填充</text>
 					<text class="product-price">￥1350-7580</text>
 				</view>
 				<view class="product-item">
-					<image src="http://localhost:3000/img/product_detail/recomend04.png" class="product-img"></image>
+					<image src="http://192.168.124.34:3000/img/product_detail/recomend04.png" class="product-img"></image>
 					<text class="product-name">艾玛沙发</text>
 					<text class="product-describe">书架式扶手 长度随意组合</text>
 					<text class="product-price">￥1350-7580</text>
@@ -20,13 +20,13 @@
 			</view>
 			<view class="product-row">
 				<view class="product-item margin-right">
-					<image src="http://localhost:3000/img/product_detail/recomend03.png" class="product-img"></image>
+					<image src="http://192.168.124.34:3000/img/product_detail/recomend03.png" class="product-img"></image>
 					<text class="product-name">比邻沙发</text>
 					<text class="product-describe">意大利经典设计 鹅绒填充</text>
 					<text class="product-price">￥1350-7580</text>
 				</view>
 				<view class="product-item">
-					<image src="http://localhost:3000/img/product_detail/recomend04.png" class="product-img"></image>
+					<image src="http://192.168.124.34:3000/img/product_detail/recomend04.png" class="product-img"></image>
 					<text class="product-name">艾玛沙发</text>
 					<text class="product-describe">书架式扶手 长度随意组合</text>
 					<text class="product-price">￥1350-7580</text>

@@ -1,107 +1,14 @@
 <template>
 	<view class="product-list">
-		<view class="product-list-row">
-			<view class="product-list-item distance">
-				<image src="http://localhost:3000/img/sofa/sofa01.png" class="product-img" @click="toSofaDetail"></image>
-				<text class="product-name">新主题布艺沙发</text>
-				<text class="product-decribe">极简经典设计 天然亲肤</text>
-				<text class="product-price">￥1350-7580</text>
-				<view class="badge">
-					<text class="badge-item">多规格</text>
-					<text class="badge-item">多颜色</text>
-					<text class="badge-item">多材质</text>
-				</view>
-			</view>
-			<view class="product-list-item">
-				<image src="http://localhost:3000/img/sofa/sofa02.png" class="product-img"></image>
-				<text class="product-name">
-					<text class="badge-item">多材质</text>
-					新主题布艺沙发
-				</text>
-				<text class="product-decribe">极简经典设计 天然亲肤</text>
-				<text class="product-price">￥1350-7580</text>
-				<view class="badge">
-					<text class="badge-item">多规格</text>
-					<text class="badge-item">多颜色</text>
-				</view>
-			</view>
-		</view>
-		<view class="product-list-row">
-			<view class="product-list-item distance">
-				<image src="http://localhost:3000/img/sofa/sofa03.png" class="product-img"></image>
-				<text class="product-name">新主题布艺沙发</text>
-				<text class="product-decribe">极简经典设计 天然亲肤</text>
-				<text class="product-price">￥1350-7580</text>
-				<view class="badge">
-					<text class="badge-item">多规格</text>
-					<text class="badge-item">多颜色</text>
-					<text class="badge-item">多材质</text>
-				</view>
-			</view>
-			<view class="product-list-item">
-				<image src="http://localhost:3000/img/sofa/sofa04.png" class="product-img"></image>
-				<text class="product-name">
-					<text class="badge-item">多材质</text>
-					新主题布艺沙发
-				</text>
-				<text class="product-decribe">极简经典设计 天然亲肤</text>
-				<text class="product-price">￥1350-7580</text>
-				<view class="badge">
-					<text class="badge-item">多规格</text>
-					<text class="badge-item">多颜色</text>
-				</view>
-			</view>
-		</view>
-		<view class="product-list-row">
-			<view class="product-list-item distance">
-				<image src="http://localhost:3000/img/sofa/sofa05.png" class="product-img"></image>
-				<text class="product-name">新主题布艺沙发</text>
-				<text class="product-decribe">极简经典设计 天然亲肤</text>
-				<text class="product-price">￥1350-7580</text>
-				<view class="badge">
-					<text class="badge-item">多规格</text>
-					<text class="badge-item">多颜色</text>
-					<text class="badge-item">多材质</text>
-				</view>
-			</view>
-			<view class="product-list-item">
-				<image src="http://localhost:3000/img/sofa/sofa06.png" class="product-img"></image>
-				<text class="product-name">
-					<text class="badge-item">多材质</text>
-					新主题布艺沙发
-				</text>
-				<text class="product-decribe">极简经典设计 天然亲肤</text>
-				<text class="product-price">￥1350-7580</text>
-				<view class="badge">
-					<text class="badge-item">多规格</text>
-					<text class="badge-item">多颜色</text>
-				</view>
-			</view>
-		</view>
-		<view class="product-list-row">
-			<view class="product-list-item distance">
-				<image src="http://localhost:3000/img/sofa/sofa07.png" class="product-img"></image>
-				<text class="product-name">新主题布艺沙发</text>
-				<text class="product-decribe">极简经典设计 天然亲肤</text>
-				<text class="product-price">￥1350-7580</text>
-				<view class="badge">
-					<text class="badge-item">多规格</text>
-					<text class="badge-item">多颜色</text>
-					<text class="badge-item">多材质</text>
-				</view>
-			</view>
-			<view class="product-list-item">
-				<image src="http://localhost:3000/img/sofa/sofa08.png" class="product-img"></image>
-				<text class="product-name">
-					<text class="badge-item">多材质</text>
-					新主题布艺沙发
-				</text>
-				<text class="product-decribe">极简经典设计 天然亲肤</text>
-				<text class="product-price">￥1350-7580</text>
-				<view class="badge">
-					<text class="badge-item">多规格</text>
-					<text class="badge-item">多颜色</text>
-				</view>
+		<view class="product-list-item" v-for="(item,index) in products" :key="index" @click="toProductDetail(item)">
+			<image class="product-img" :src="item.src"></image>
+			<text class="product-name">{{ item.name }}</text>
+			<text class="product-describe">{{ item.describe }}</text>
+			<text class="product-price">￥{{ item.price }}</text>
+			<view class="badge">
+				<text class="badge-item">多规格</text>
+				<text class="badge-item">多颜色</text>
+				<text class="badge-item">多材质</text>
 			</view>
 		</view>
 	</view>
@@ -111,20 +18,32 @@
 	export default {
 		data() {
 			return {
-
+				products:[]
 			}
 		},
 		components: {
 
 		},
 		created() {
-
-
+			uni.request({
+				url:"http://192.168.124.34:3000/findSofa",
+				method:"GET",
+				success: res => {
+					this.products = res.data
+					// console.log(this.products)
+				}
+			})
 		},
 		methods: {
-			toSofaDetail() {
+			// 跳转到商品详情页
+			toProductDetail(item){
+				// 页面跳转
 				uni.navigateTo({
-					url: "/pages/productDetail/ProductDetail"
+					url: "/pages/productDetail/ProductDetail",
+					success: res => {
+						// 把商品数据保存在vuex
+						this.$store.commit("savaProduct",item)
+					}
 				})
 			}
 		}
@@ -135,44 +54,41 @@
 	.product-list {
 		padding: 20rpx;
 		color: #232E3D;
-	}
-
-	.product-list-row {
+		
 		display: flex;
-		margin-bottom: 20rpx;
+		flex-wrap: wrap;
 	}
-
-	.product-list-item {
-		flex: 1;
+	
+	.product-list-item{
+		width: 50%;
+		box-sizing: border-box;
+		padding: 10rpx;
 	}
-
-	.distance {
-		margin-right: 20rpx;
-	}
-
-	.product-img {
+	
+	.product-img{
 		width: 100%;
-		height: 360rpx;
-
-		border-radius: 8px;
+		height: 280rpx;
 	}
-
-	.product-name,
-	.product-decribe,
-	.product-price {
+	
+	.product-name, .product-describe, .product-price{
 		display: block;
+	}
+	
+	.product-name, .product-price{
+		font-size: 16px;
 		line-height: 50rpx;
 	}
-
-	.product-decribe {
-		color: #8A94A1;
+	
+	.product-describe{
 		font-size: 14px;
+		color: #8A94A1;
+		line-height: 50rpx;
 	}
-
-	.product-price {
-		color: red;
+	
+	.badge{
+		margin-bottom: 20rpx;
 	}
-
+	
 	.badge-item {
 		display: inline-block;
 		font-size: 12px;
